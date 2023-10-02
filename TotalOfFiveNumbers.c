@@ -1,18 +1,17 @@
 #include <stdio.h>
 int main(void)
 {
-    int count = 0,total;
+    int count = 1,total=0,num;
 
-    if(count>=5)
+    for(count; count <=5; count ++)
     {
-        total = total+count;
-        count = count +1;
+        printf("Please Enter Number %d ",count);
+        scanf("%d",&num);
+
+        total = total + num ;
+
     }
 
-    else
-    {
-        printf("Total is %d",total);
-    }
-
+    printf("Total Is : %d",total);
     return 0;
 }
